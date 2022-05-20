@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": 3000
+    },
+    "views": {
+        "path": "app/views",
+        "options": {
+            "map": {
+                "pug": "pug"
+            },
+            "extension": "pug"
+        }
+    },
+    "static":{
+        "path":"app/static"
+    },
+    "data": {
+        "path": "app/data"
+    },
+    "settings": {
+        "siteName": "Slime's Dungeon",
+        "snipcartApiKey": "M2I1OTZjZGUtOTYzNi00NTMyLTllNzYtNmViOWE3ZTBkNzBhNjM3ODc0NjM3NzYyMzExODA1",
+        "defaultDonation" : 250
+    }
+}

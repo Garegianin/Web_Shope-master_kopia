@@ -1,0 +1,42 @@
+extends _layout
+block scripts
+  script(src="/scripts/donate.js")
+  // TODO Дораотать пончики
+block content
+  section.container.mx-auto.h-100
+    .form-group
+    label.mb-3(for="amount") Спасибо, что перешли сюда!
+    label.mb-3(for="amount") Если хотите, то введите сумму которую вы можите задонатить на развитие магазина ниже.
+    input#amount.mb-4.w-25.form-control.mx-auto.text-center(type="number", value=model.amount)
+    button#donate.btn.btn-secondary.snipcart-add-item(
+      data-item-id="donation"
+      data-item-url=`${urlWithoutQuery}?amount=${model.amount}`
+      data-item-name="Донат"
+      data-item-description="Благодорю"
+      data-item-price=model.amount
+      data-item-shippable="Ошибка"
+      data-item-categories="Донат"
+      data-item-max-quantity="1"
+      data-item-taxable=false
+      ) добавить в корзину
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    |.
+    p.dopdonate
+    | Огромное спасибо)
+

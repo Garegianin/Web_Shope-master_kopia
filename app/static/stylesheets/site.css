@@ -1,0 +1,196 @@
+/*
+ Глобальные переменные
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Press+Start+2P&display=swap');
+ /* Пользовательская кнопка по умолчанию */
+
+:root {
+  --custom-white: #efe;
+  --custom-bg: #333;
+}
+.avatar {
+  border-radius: 100%;
+  height: auto;
+  width: 360px;
+}
+.avatar2{
+  border-radius: 100%;
+  height: auto;
+  width: 450px;
+}
+
+.avatar3{
+  border-radius: 20%;
+  height: auto;
+  width: 35px;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--custom-white);
+  text-shadow: none; /* Предотвратить наследование от `body` */
+  background-color: #212529;
+  border: .05rem solid var(--custom-white);
+}
+
+/*
+ Базовая структура
+ */
+
+html,
+body {
+  background-color: #e2eee2;
+  color: #6d8f31;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Press Start 2P', cursive;
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5 .card-title {
+  font-family: 'Press Start 2P', cursive;
+}
+.cover-container {
+  max-width: 42em;
+  color: var(--custom-white);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.colorprice{
+  color: darkgreen;
+  -webkit-text-stroke: 0.5px #212529;
+}
+
+/* Связи */
+a,
+a:focus,
+a:hover {
+  color: var(--custom-white);
+}
+
+.form-control, .form-control:focus,
+.form-control:focus:active  {
+  color: var(--custom-white);
+  background-color: var(--custom-bg);
+}
+
+/*
+  Верхушка(Header)
+ */
+.colortitle{
+  color: var(--custom-white);
+  -webkit-text-stroke: 1px #333333;
+}
+.masthead {
+  margin-bottom: 2rem;
+}
+.colorheader{
+  background-color: #6d8f31;
+}
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: var(--custom-white);
+  background-color: var(--custom-bg);
+}
+
+#snipcart {
+  z-index: 1050;
+  background-color: #6d8f31;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+@media (max-width: 48em) {
+  .avatar {
+    width: 280px;
+  }
+}
+
+
+/*
+ Основка (Cover)
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.center1{
+  text-align: center
+}
+.justify1{
+  text-align: justify;
+  text-indent: 20px;
+}
+
+/*
+ Footer
+ */
+.mastfoot{
+  background-color: #444444;
+  color: rgba(255, 255, 255, .5);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dopdonate{
+  text-color: #E2EEE2;
+}
+.borderimg{
+  border: 0.5px solid  #212529;
+}
+.overflowtextrow{
+  overflow-wrap: break-word;
+}
+.textright{
+  text-align: right;
+}
+border1{
+  border: 10px #444444;
+}
+border2 {
+  border:  10px #444444;
+}
+.th1 {
+  padding: 1em;
+  text-align: left;
+  border: 3px solid black;
+  padding: 1em;
+  border-collapse: collapse;
+}
+
+
+

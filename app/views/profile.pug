@@ -1,0 +1,31 @@
+extends _layout
+block content
+    section.container
+        img.avatar.mt-3.mb-5(src="https://thumbs.gfycat.com/OptimalKindheartedElk-size_restricted.gif")
+    section.container
+        //имя пользователя
+        h3.cover-heading.mb-5 Имя: Семён
+        // почта
+        h3.cover-heading.mb-5 Почта: simon@yandex.ru
+
+    section.container.mb-5
+        h4.cover-heading.mb-5 Список желаемого
+        table.th1.mb-3
+            thead
+                tr.mb-3
+                    th
+                        h5.mb-3 Название
+                    th
+                        h5.mb-3 Цена
+            tbody
+                tr
+                    td
+                        h6.mb-2 Манчкин
+                    td
+                        h6.mb-2 1290
+                tr
+                    td
+                        h6.mb-2 Немезис
+                    td
+                        h6.mb-2 13990
+        //вывод желаемого с таблицей

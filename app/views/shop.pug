@@ -1,0 +1,34 @@
+extends _layout
+block content
+    section.container
+        button.buttonComponent(@click.prevent="onClick")
+            b Убывание цены
+            slot
+        button.buttonComponent(@click.prevent="onClick")
+            b Возрастание цены
+            slot
+        | |
+        button.buttonComponent(@click.prevent="onClick")
+            b Классика
+            slot
+        button.buttonComponent(@click.prevent="onClick")
+            b Карточные
+            slot
+        button.buttonComponent(@click.prevent="onClick")
+            b Пазлы
+            slot
+        | |
+        button.buttonComponent(@click.prevent="onClick")
+            b Сброс
+            slot
+
+    section.container
+        h5.cover-heading.mb-5
+        .container
+            .row
+                each product in model.products
+                    .col-md.mb-3
+                        .card.bg-transparent.h-100.w-100.mb-2.mx-auto
+                            .card-body
+                                h3.overflowtextrow.card-title=product.name
+                                a.btn.btn-dark.border.border-secondary(href=`/buy/${product._slug}`) #{product.price}₽
