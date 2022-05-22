@@ -1,0 +1,44 @@
+extends _layout
+block content
+    section.container
+        h1
+            a(href="/").colortitle=settings.siteName
+        button.buttonComponent(@click.prevent="onClick")
+            b signup
+            slot
+        button.buttonComponent.disabled
+            a.colortitle(href="/login") login
+            slot
+    section.container.mb-5
+        | _________________________________________________________________________
+        h1 Регистрация
+        | _________________________________________________________________________
+        ul.list-style-type.center1
+            li
+                |Никнейм
+                input.mb-3
+            li
+                |E-mail
+                |
+                input.mb-3
+            li
+                |Пароль
+                |
+                input.mb-3
+    section.container.mb-5
+        | |
+        buttona.btn.btn-dark.border.border-secondary(@click.prevent="onClick")
+            a.colortitle(href="/profile") Вход
+            slot
+        | |
+
+        buttona.btn.btn-dark.border.border-secondary(@click.prevent="onClick")
+            a.colortitle(href="/") Главная
+            slot
+        | |
+
+        p .
+        p .
+        p .
+        p .
+
