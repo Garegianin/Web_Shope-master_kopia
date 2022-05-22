@@ -192,5 +192,8 @@ border2 {
   border-collapse: collapse;
 }
 
+.list-style-type{
+  list-style-type: none;
+}
 
 
