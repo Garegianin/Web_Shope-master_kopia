@@ -13,14 +13,14 @@ connection.connect(function(err){
         console.log("Подключение к серверу MySQL успешно установлено");
     }
 });
-connection.query("SELECT * FROM products",
+connection.query("SELECT * FROM product",
     function(err, results, fields) {
         console.log(err);
         console.log(results); // собственно данные
     });
 
 
-connection.execute("SELECT price FROM products",
+connection.execute("SELECT price FROM product",
     function(err, results, fields) {
         console.log(err);
         console.log(results); // собственно данные

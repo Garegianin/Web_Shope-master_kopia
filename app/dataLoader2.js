@@ -71,11 +71,11 @@ class DataLoader2 {
 
     //всё
     async all() {
-        const result = await connection.query("SELECT * FROM products",
+        const result = await connection.query("SELECT * FROM product",
             function (err, results, fields) {
                 console.log(err);
                 console.log(results); // собственно данные
-                results.map(result=> Object.assign(result, {_slug: results.idproducts}))
+                results.map(result=> Object.assign(result, {_slug: results.idproduct}))
             });
         return Promise.all(result)
     }
@@ -90,7 +90,7 @@ class DataLoader2 {
 
     //Один
     async single(slug) {
-        const result = await connection.query("SELECT * FROM products where idproducts = "+slug,
+        const result = await connection.query("SELECT * FROM product where idproducts = "+slug,
                 function (err, results, fields) {
                     console.log(err);
                     console.log(results); // собственно данные

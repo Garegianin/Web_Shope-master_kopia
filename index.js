@@ -15,7 +15,7 @@ const productsLoader = new DataLoader(
   path.join(
     __dirname,
     config.get('data.path'),
-    'products')
+    'product')
 )
 
 // Просмотр настройки, добавляет функцию render() к объекту ctx
