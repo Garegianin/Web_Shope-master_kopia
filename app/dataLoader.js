@@ -1,6 +1,12 @@
 const path = require('path')
 const fs = require('fs-extra')
 
+
+//Для тестов
+const config = require('config')
+
+//оригинал
+/**/
 function fileInfo(fileName, dir) {
     return {
         slug: fileName.substr(0, fileName.indexOf('.json')),
@@ -31,5 +37,9 @@ class DataLoader {
         return found ? readFile(found) : null
     }
 }
+
+
+
+
 
 module.exports = DataLoader
